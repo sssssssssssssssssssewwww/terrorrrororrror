@@ -8,8 +8,8 @@ const bot = new aoijs.AoiClient({
 
 //status
 bot.status({
-  text: "Watch it",
-  type: "STREAMING",
+  text: "JEYDALIO",
+  type: "WATCHING",
   url: "https://www.youtube.com/c/BeingYT",
 });
 //Events
@@ -30,6 +30,10 @@ bot.command({
   $cooldown[2s;{newEmbed:{description:\:_\: Don't send messages to fast, you can break me by doing it}{color:RED}}]
 
   $onlyIf[$checkContains[$message;@everyone;@here]==false;{newEmbed:{description:\:_\: I don't disturb people!}{color:#ff0000}}]
+   $onlyIf[$checkContains[$message;owner]==false;{newEmbed:{description:\:_\: KKKC}{color:#ff0000}}]
+    $onlyIf[$checkContains[$message;made]==false;{newEmbed:{description:\:_\: KKKC}{color:#ff0000}}]
+     $onlyIf[$checkContains[$message;created]==false;{newEmbed:{description:\:_\: KKKC}{color:#ff0000}}]
+      $onlyIf[$checkContains[$message;cre]==false;{newEmbed:{description:\:_\: KKKC}{color:#ff0000}}]
 
   $onlyForChannels[$getServerVar[chatbotChannel];]
 
